@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/estilos.css">
+    <title>Formulario Categoría</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div>
+            <a href="/views/home.html"> <img class="logo" src="/assets/img/logo.png" alt="ícono tienda"> </a>
+        </div>
+        <div>
+            <ul class="navbar_list">
+                <li>
+                    <a href="/views/home.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="/backend/views/categorias.html">Alta de categorias</a>
+                </li>
+                <li>
+                    <a href="/backend/views/productos.html">Alta de productos</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <h2 class="title_form">Formulario de alta de categorías</h2>
+
+    <form class="form">
+
+        <fieldset class="fieldset">
+            <legend>Ingresa la nueva categoría</legend>
+            <p>Todos los campos que contengan un <span>*</span> son obligatorios</p>
+
+            <div class="form_container">
+
+                <div class="form_content">
+                    <label for="id">Id <span>*</span></label>
+                    <input type="number" name="id" id="id" required>
+                </div>
+
+                <div class="form_content">
+                    <label for="categoria">Categoría<span>*</span></label>
+                    <input type="text" name="categoria" id="categoria" required>
+                </div>
+
+                <div>
+                    <button class="button_reset" type="reset">Limpiar</button>
+                    <button class="button_submit" type="submit">Registrar</button>
+                </div>
+        </fieldset>
+    </form>
+
+    <div class="nombre_alumno">
+        <p>Sebastián Gaete Fuentes</p>
+    </div>
+
+
+
+</body>
+
+</html>
