@@ -157,3 +157,10 @@ a{
 .nombre_alumno {
     text-align: center;
 }
+
+.error_message{
+    margin: 10px;
+    font-size: 10px;
+    color: rgb(252, 11, 11);
+    font-weight: bold;
+}
