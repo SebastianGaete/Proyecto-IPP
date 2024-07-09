@@ -11,41 +11,43 @@
 
 <body>
 
-    <nav class="navbar">
-        <div>
-            <a href="/views/home.html"> <img class="logo" src="/assets/img/logo.png" alt="ícono tienda"> </a>
-        </div>
-        <div>
-            <ul class="navbar_list">
-                <li>
-                    <a href="/views/home.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="/backend/views/categorias.html">Alta de categorias</a>
-                </li>
-                <li>
-                    <a href="/backend/views/productos.html">Alta de productos</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="../../index.php"> <img class="logo" src="/assets/img/logo.png" alt="ícono tienda"> </a>
+            </div>
+            <div>
+                <ul class="navbar_list">
+                    <li>
+                        <a href="../../index.php">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/backend/views/form_categorias.html">Alta de categorias</a>
+                    </li>
+                    <li>
+                        <a href="/backend/views/form_productos.html">Alta de productos</a>
+                    </li>
+                    <li>
+                        <a href="/backend/views/lista_categorias.php">Lista Categorías</a>
+                    </li>
+                    <li>
+                        <a href="/backend/views/lista_productos.php">Lista Productos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <h2 class="title_form">Formulario de alta de categorías</h2>
 
-    <form id="formularioCategoria" class="form">
+    <form id="formularioCategoria" class="form" method="post" action="../categorias.php">
 
         <fieldset class="fieldset">
             <legend>Ingresa la nueva categoría</legend>
             <p>Todos los campos que contengan un <span>*</span> son obligatorios</p>
 
             <div class="form_container">
-
-                <div class="form_content">
-                    <label for="id">Id <span>*</span></label>
-                    <input type="number" name="id" id="id" required>
-                    <p hidden id="valorId" class="error_message"></p>
-                </div>
-                
+              
 
                 <div class="form_content">
                     <label for="categoria">Categoría<span>*</span></label>
